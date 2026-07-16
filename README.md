@@ -13,7 +13,7 @@ A physical beat-making instrument built around stepper motors as pitched voices;
 
 ## Wiring
 
-### Input Arduino (Nano) — buttons, encoder, and texture servos
+### Input Arduino (Nano) : buttons, encoder, and texture servos
 
 | Component | Pin |
 |---|---|
@@ -33,7 +33,7 @@ A physical beat-making instrument built around stepper motors as pitched voices;
 
 Buttons use `INPUT_PULLUP`; one leg to its pin, the other leg to a shared ground rail. Buttons 1-4 also locally drive their matching servo for on-board feedback.
 
-### Output Arduino (Nano) — stepper motors via A4988 drivers
+### Output Arduino (Nano) : stepper motors via A4988 drivers
 
 | Motor | STEP | DIR |
 |---|---|---|
