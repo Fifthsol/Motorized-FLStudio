@@ -68,6 +68,8 @@ https://cad.onshape.com/documents/37c8f188255b221d14c71916/w/ac710fb74276f16d4e0
 <img src="https://cdn.hackclub.com/019f6cf1-3cd4-7021-9889-57f47633503f/projectphoto.png">
 
 <img src="https://cdn.hackclub.com/019f6d06-9ddc-7116-b20f-14ccb0f49b43/Screenshot%202026-07-16%20182233.png">
+
+<img src="https://cdn.hackclub.com/019f6d09-895e-7e0c-987b-e53392ea5098/Screenshot%202026-07-16%20182540.png">
 ## Demo Video
 
 https://youtu.be/40AQsFcJLmk
