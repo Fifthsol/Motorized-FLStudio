@@ -8,6 +8,21 @@ Beat-making board built with 4 stepper motors that run at different frequencies 
 
 Six front-panel buttons and a rotary encoder are used for input. You can also use a webcam-based hand-tracking model as a touchless alternative
 
+# Bill of Materials
+
+- Arduino Nano (x2)
+- Laptop
+- NEMA17 stepper motor (x4)
+- A4988 stepper driver module (x4)
+- 12V power supply
+- Micro servo (x4)
+- 5-6V servo power supply
+- Tactile push button, 4-pin (x6)
+- Rotary encoder with push button
+- Breadboard
+- Jumper wires
+- USB cable (x2)
+
 ## Wiring
 
 ### Input Arduino (Nano) : buttons, encoder, and texture servos
