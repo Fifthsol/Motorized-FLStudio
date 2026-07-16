@@ -56,8 +56,9 @@ Six front-panel buttons and a rotary encoder are used for input. You can also us
 - Loop snapping
 - BPM control
 - Track length control
-- The design goal is to keep as much control as possible in the software itself, rather than offloading logic to the hardware
+- keep as much control as possible in godot, use hardware as nodes
 - Run by downloading the GitHub repo folder
+- Button maps all on screen
 
 ## CAD
 
