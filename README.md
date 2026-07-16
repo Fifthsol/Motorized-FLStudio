@@ -1,15 +1,12 @@
 # [Motorized FL Studio]
 
-An FL Studio-style, Teenage Engineering-inspired producer board that makes music with stepper motors; servos are used for haptic feedback and accents.
+FL Studio-style producer board that makes music with stepper motors, servos are also used for haptic feedback and accents.
 
 ## Overview
 
-A physical beat-making instrument built around stepper motors as pitched voices; six front-panel buttons and a rotary encoder handle composing, while a webcam-based hand-tracking model offers an alternate, touchless way to input tones.
+Beat-making board built with 4 stepper motors that run at different frequencies for sounds. 
 
-## Input
-
-- 6 buttons and a rotary encoder; 4 of the buttons each control one stepper motor voice
-- An AI hand-tracking model that detects thumb-to-finger pinches, usable as an alternate way to input tones without touching the board
+Six front-panel buttons and a rotary encoder are used for input. You can also use a webcam-based hand-tracking model as a touchless alternative
 
 ## Wiring
 
@@ -31,8 +28,6 @@ A physical beat-making instrument built around stepper motors as pitched voices;
 | Encoder DT | A4 |
 | Encoder SW (click) | A5 |
 
-Buttons use `INPUT_PULLUP`; one leg to its pin, the other leg to a shared ground rail. Buttons 1-4 also locally drive their matching servo for on-board feedback.
-
 ### Output Arduino (Nano) : stepper motors via A4988 drivers
 
 | Motor | STEP | DIR |
@@ -42,16 +37,14 @@ Buttons use `INPUT_PULLUP`; one leg to its pin, the other leg to a shared ground
 | Motor 3 | D9 | D10 |
 | Motor 4 | D11 | D12 |
 
-Each A4988 driver's `VDD`/`GND` (logic) connects to the Arduino; `VMOT`/`GND` (power) connects to a separate 12V supply, grounded in common with the Arduino. `RESET` and `SLEEP` are jumpered together on each driver; without this the driver stays disabled.
-
 ## Setup
 
-1. Upload the Input Arduino sketch to the Input board; this handles the buttons, encoder, and servos, and sends the ID handshake the serial link looks for.
-2. Run the serial link; this connects the Arduino inputs to serial so Godot can read them.
+1. Upload the input Arduino sketch to the input board arduino nano, this script lets buttons be connected to servos and then to serial link which is used by godot.
+2. Run the serial link so Godot can read them.
    ```
    python "file path"
    ```
-3. Download and run the Godot project; once the serial link is running and the Godot project is open, the integration should function.
+3. Download and run the Godot project, when serial link is running and the Godot project is open, integration should function.
 
 ## Godot Game Design
 
