@@ -1,0 +1,44 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="music pad"
+run/main_scene="res://scenes/ComposeFlow.tscn"
+config/features=PackedStringArray("4.6", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[autoload]
+
+VoiceManager="*res://scripts/VoiceManager.gd"
+ChordDetector="*res://scripts/ChordDetector.gd"
+ExpertModeToggle="*res://scripts/ExpertModeToggle.gd"
+EnergyTracker="*res://scripts/EnergyTracker.gd"
+HoldEnvelope="*res://scripts/HoldEnvelope.gd"
+DriftScheduler="*res://scripts/DriftScheduler.gd"
+Sequencer="*res://scripts/Sequencer.gd"
+HardwareInput="*res://scripts/HardwareInput.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
