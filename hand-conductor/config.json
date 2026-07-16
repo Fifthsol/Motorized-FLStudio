@@ -1,0 +1,20 @@
+{
+  "min_command_interval_s": 0.08,
+  "servo_min_angle": 0,
+  "servo_max_angle": 180,
+  "stepper_max_speed": 600,
+  "six_seven_velocity_threshold": 0.25,
+  "six_seven_display_seconds": 1.5,
+  "six_seven_cooldown_seconds": 60,
+  "six_seven_open_palm_window_frames": 24,
+  "six_seven_open_palm_ratio": 0.7,
+  "six_seven_easy_velocity_threshold": 0.1,
+  "tap_thumb_contact_ratio": 0.42,
+  "tap_thumb_strong_contact_ratio": 0.3,
+  "tap_thumb_release_ratio": 0.58,
+  "tap_active_seconds": 0.16,
+  "tap_minimum_interval": 0.18,
+  "tap_stepper_speed": 450,
+  "tap_servo_angle": 150,
+  "tap_stepper_frequencies": [261.63, 293.66, 349.23, 392.00]
+}
