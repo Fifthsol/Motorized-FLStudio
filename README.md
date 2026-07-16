@@ -45,7 +45,11 @@ Six front-panel buttons and a rotary encoder are used for input. You can also us
    python "file path"
    ```
 3. Download and run the Godot project, when serial link is running and the Godot project is open, integration should function.
-4. If you want to use the hand model install the hand conductor file and its dependancies (should auto install), then CD into the folder and run python run_conductor.py --bridge, no extra integration should work!
+4. If you want to use the hand model install the hand conductor file and its dependancies (should auto install), then CD into the folder and run
+   ```
+   python run_conductor.py --bridge
+   ```
+   no extra integration should work with the godot project!
 
 ## Godot Game Design
 
