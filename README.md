@@ -2,6 +2,9 @@
 
 FL Studio-style producer board that makes music with stepper motors, servos are also used for haptic feedback and accents.
 
+<img src="https://cdn.hackclub.com/019f6cf1-3cd4-7021-9889-57f47633503f/projectphoto.png">
+
+
 ## Overview
 
 Beat-making board built with 4 stepper motors that run at different frequencies for sounds. 
